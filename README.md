@@ -406,7 +406,7 @@ const app = express();
 const data = {
     // ... your data
 };
-app.use('/graphql', jsonGraphqlExpress(data));
+app.use('/graphql', jsonGraphqlExpress.default(data));
 app.listen(PORT);
 ```
 
